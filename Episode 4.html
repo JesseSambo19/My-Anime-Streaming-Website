@@ -3,7 +3,6 @@
 <head>
 	<title>Bleach Episode 4</title>
 	<link rel="stylesheet" type="text/css" href="Episode 1.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style>
             /*Scrollbar customization*/
               /* width */
@@ -30,46 +29,15 @@
           </style>
 </head>
 <body>
-	<header>World Of Anime</header>
-	<div>
-      <nav>
-        <input type="text" placeholder="Search">
-        <button class="search-button">Search</button>
-        <span>
-        <i id="nav_bars" class="fa fa-bars" aria-hidden="true"></i>
-        </span>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">Most Popular</a></li>
-          <li><a href="#">Dubbed</a></li>
-          <li><a href="#">Subbed</a></li>
-          <li><a href="#">Categories</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div style="display: none;"id="box">
-      <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">Most Popular</a></li>
-          <li><a href="#">Dubbed</a></li>
-          <li><a href="#">Subbed</a></li>
-          <li><a href="#">Categories</a></li>
-        </ul>
-    </div>
-    <script>
-      const box = document.getElementById("box");
-
-      const openNav = ()=>{
-      if(box.classList.contains("box_open")){
-        box.classList.remove("box_open");
-      }else{
-        box.classList.add("box_open"); 
-      }
-}
-      const navBars = document.getElementById("nav_bars");
-      
-      navBars.addEventListener("click",openNav);
-    </script>
+	<header>Anime World</header>
+	<nav id="nav_id">
+		<ul>
+			<li><a href="Main page.html">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">Services</a></li>
+		</ul>
+	</nav>
 	<h1>Bleach(Dubbed)</h1>
 	<br>
 	<button id="button1"><a style="padding-right: 10px" href="Episode 3.html">Previous</a><label>|4|</label><a style="padding-left: 10px" href="Episode 5.html">Next</a></button>

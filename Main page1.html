@@ -3,7 +3,6 @@
 <head>
 	<title>Anime World</title>
 	<link rel="stylesheet" type="text/css" href="Main page1.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style>
             /*Scrollbar customization*/
               /* width */
@@ -30,57 +29,22 @@
           </style>
 </head>
 <body>
-	<header>World Of Anime</header>
-	<div>
-      <nav>
-        <input type="text" placeholder="Search">
-        <button class="search-button">Search</button>
-        <span>
-        <i id="nav_bars" class="fa fa-bars" aria-hidden="true"></i>
-        </span>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Most Popular</a></li>
-          <li><a href="#">Dubbed</a></li>
-          <li><a href="#">Subbed</a></li>
-          <li><a href="#">Categories</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div style="display: none;"id="box">
-      <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Most Popular</a></li>
-          <li><a href="#">Dubbed</a></li>
-          <li><a href="#">Subbed</a></li>
-          <li><a href="#">Categories</a></li>
-        </ul>
-    </div>
-    <script>
-      const box = document.getElementById("box");
-
-      const openNav = ()=>{
-      if(box.classList.contains("box_open")){
-        box.classList.remove("box_open");
-      }else{
-        box.classList.add("box_open"); 
-      }
-}
-      const navBars = document.getElementById("nav_bars");
-      
-      navBars.addEventListener("click",openNav);
-    </script>
+	<header>Anime World</header>
+	<nav id="nav_id">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">Services</a></li>
+		</ul>
+	</nav>
 	<div class="container">
-		<center>
-			<a href="index.html"><button type="button" class="toggle-btn1" style="float: left;">Series</button></a>
-			<a href="#"><button type="button" class="toggle-btn2" style="float: right;border-bottom-left-radius: 0%;
-	border-bottom-right-radius: 0%;border-top-left-radius: 0%;">Movies</button></a>
-		</center>
-		<!--<a href="Main page.html"><h1 id="first">Series</h1></a><a href="#"><h1 id="second">Movies</h1></a>-->
-		<center>
-			<a href="movie1.html"><img src="My Hero Academia.jpg"></a>
-			<a href="movie2.html"><img src="Seven Deadly Sins.jpg"></a>
-		</center>
+		<a href="Main Page.html"><h1 id="first">Series</h1></a><a href="#"><h1 id="second">Movies</h1></a>
+		<hr>
+		<br>
+		<a href="movie1.html"><img src="My Hero Academia.jpg"></a>
+		<a href="movie2.html"><img src="Seven Deadly Sins.jpg"></a>
+		<br>
 	</div>
 	
 	<div style="margin-top: 200px"></div>

@@ -3,7 +3,6 @@
 	/*overflow: hidden;*/
 	font-family: Helvetica, Ariel, sans-serif;
 	line-height: 1.6em;
-	box-sizing: border-box;
 }
 body{
 	background-color: #333/*#696969*/;
@@ -17,32 +16,25 @@ header{
 	font-size: 120%;
 }
 
-#nav_id{
+/*#nav_id{
 	background-color: black;
-	height: 80px;
-	width: 100%;
+	padding: 20px;
+}*/
+#nav_id ul{
 	list-style: none;
 	padding: 0;
-}
-#nav_id ul{
-	float: right;
-	margin-right: 20px;
-
+	background-color: black;
+	padding: 20px;
+	/*width: 100%;*/
 }
 #nav_id li{
 	display: inline-block;
-	line-height: 80px;
-	margin: 0 5px;
+	padding-left: 30px;
 }
 #nav_id a{
 	text-decoration: none;
 	color: #fff;
-	font-size: 17px;
-	text-transform: uppercase;
-	padding: 7px 13px;
-	border-radius: 3px;
 }
-
 /*#nav_id li:hover {
 	background-color: red;
 } navigation bar hover*/
@@ -54,8 +46,7 @@ h1{
 img{
 	/*display: ;*/
 	/*margin-left: 200px;*/
-	margin: 20px 0 auto;
-	/*margin-right: auto;*/
+	margin-right: auto;
     width: 200px;
     height: 200px;
     border-style: solid;
@@ -64,7 +55,7 @@ img{
     border-color: #000;
 }
 
-.container1{
+.container{
 	border-style: solid;
     border-radius: 5px;
     border-width: 2px;
@@ -80,7 +71,11 @@ h3{
 	padding: 10px;
 	background-color: black;
 }
-
+hr{
+	height: 2px;
+	background-color: #000;
+	border: none;
+}
 p{
 	padding-top: 20px;
 	padding-right: 20px;
@@ -115,16 +110,43 @@ footer{
 	color: #fff;
 	text-align: center;
 }
-.container1{
+.container{
 	margin-top: 20px;
 	border: 2px black solid;
-	border-radius: 8px;
+	border-radius: 5px;
 	width: 70%;
 	margin-right: auto;
 	margin-left: auto;
 }
+h1{
+	display: inline;
+	/*padding-right: 120px;*/
 
-
+}
+#first{
+	/*border: 2px black solid;*/
+	border-radius: 5px;
+	/*border-top-color: #333;
+	border-bottom-color: #333;
+	border-left-color: #333;*/
+	background-color: #000;
+	/*Top Right Bottom Left*/
+	padding: 9px 20% 9px 20%;
+	margin: auto;
+	width: 50%;
+}
+#second{
+	/*border: 2px black solid;
+	border-radius: 5px;
+	border-top-color: #333;
+	border-bottom-color: #333;
+	border-left-color: #333;
+	/*background-color: #000;*/
+	padding-left: 20%;
+	padding-right: 20%;
+	margin: auto;
+	width: 50%;
+}
 a:link{
 	text-decoration: none;
 }
@@ -132,174 +154,3 @@ a:link{
 a:hover{
 	color: red;
 }
-.toggle-btn1{
-	padding:0px 30px 0;
-	cursor: pointer;
-	border: 0;
-	outline: none;
-	position: relative;
-	color: white;
-	font-size: 20px;
-	background-color: black;
-	border-radius: 5px;
-	width: 50%;
-	height: 45px;
-	border-bottom-left-radius: 0%;
-	border-bottom-right-radius: 0%;
-	border-top-right-radius: 0%;
-}
-.toggle-btn2{
-	padding:5px 0 30px;
-	background: transparent;
-	cursor: pointer;
-	border: 0;
-	border-bottom: 2px solid black;
-	outline: none;
-	position: relative;
-	color: white;
-	font-size: 20px;
-	border-radius: 5px;
-	width: 50%;
-	height: 45px;
-
-}
-p{
-	padding: 10px;
-	text-align: center;
-}
-
-hr{
-	color: black;
-	border: 1px solid;
-}
-.ongoing{
-	padding: 10px;
-	color: white;
-	cursor: pointer;
-}
-.ongoingContainer1{
-	margin-top: 20px;
-	border: 2px black solid;
-	border-radius: 8px;
-	width: 40%;
-	margin-right: auto;
-	margin-left: auto;
-}
-.next{
-	display: block;
-	width: 70%;
-	height: 50px;
-	color: #fff;
-	background-color: red;
-	border: 0;
-	border-radius: 4px;
-	margin-top: 10px;
-	cursor: pointer;
-	outline: none;
-}
-
-.ongoing{
-	text-decoration: none;
-}
-/*responsive navigation bar*/
-*{
-  margin: 0;
-  padding: 0;
-}
-
-nav{
-  background-color: #000;
-  text-align: right;
-  height: 50px;
-  
-}
-a{
-  text-decoration: none;
-  color: white;
-}
-a:hover{
-  color: red;
-}
-li{
-  display: inline-block;
-  padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-input{
-  float: left;
-  margin-left: 20px;
-  padding: 5px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  outline: none;
-  width: 30%;
-}
-@media screen and (max-width: 800px){
-  li{
-    display: none;
-}
-  input{
-    width: 50%;
-  }
-  nav{
-  	position: absolute;
-  	width: 100%;/*I added this because of absolute position of nav_bars*/
-  }
-  .container1{
-  	margin-top: 70px;
-  }
-}
-.search-button{
-  float: left;
-  width: 57px;
-  height: 39px;
-  display: flex;
-  padding: 5px;
-  margin-top: 5px;
-  cursor: pointer;
-  background-color: red;
-  border: none;
-  color: white;
-}
-.search-button:hover{
-  background-color: darkred;
-}
-i{
-  color: white; 
-  margin: 10px;
-  padding-right: 15px;
-}
-i:hover{
-  color: red;
-  cursor: pointer;
-}
-@media screen and (max-width:800px){
-  #nav_bars{
-  display: block !important;
-    position: absolute;
-    right: 0;
-}
-  #box{
-    background-color: black;
-    height: 0;
-    display: none;
-    margin-top: 50px;/*I added this because of absolute position of nav_bars*/
-  }
-  #box li{
-    text-align: center;
-    display: block;
-    color: white;
-  }
-}
-#nav_bars{
-  display: none;
-  margin-top: 15px;
-}
-.box_open{
-  height: 50% !important;
-  display: block !important;
-  background-color: black !important;
-}
-/*End*/
-
