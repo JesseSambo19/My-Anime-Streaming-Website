@@ -143,3 +143,104 @@ p{
 div h3{
 	background-color: #000;
 }
+/*responsive navigation bar*/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+  background-color: #000;
+  text-align: right;
+  height: 50px;
+  
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  color: red;
+}
+li{
+  display: inline-block;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+input{
+  float: left;
+  margin-left: 20px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  outline: none;
+  width: 30%;
+}
+@media screen and (max-width: 800px){
+  li{
+    display: none;
+}
+  input{
+    width: 50%;
+  }
+  /*nav{
+  	position: absolute;
+  	width: 100%;/*I added this because of absolute position of nav_bars
+  }*/
+  .container1{
+  	margin-top: 70px;
+  }
+}
+.search-button{
+  float: left;
+  width: 57px;
+  height: 39px;
+  display: flex;
+  padding: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+  background-color: red;
+  border: none;
+  color: white;
+}
+.search-button:hover{
+  background-color: darkred;
+}
+i{
+  color: white; 
+  margin: 10px;
+  padding-right: 15px;
+}
+i:hover{
+  color: red;
+  cursor: pointer;
+}
+@media screen and (max-width:800px){
+  #nav_bars{
+  display: block !important;
+    position: absolute;
+    right: 0;
+}
+  #box{
+    background-color: black;
+    height: 0;
+    display: none;
+    /*margin-top: 50px;I added this because of absolute position of nav_bars*/
+  }
+  #box li{
+    text-align: center;
+    display: block;
+    color: white;
+  }
+}
+#nav_bars{
+  display: none;
+  margin-top: 20px;
+}
+.box_open{
+  height: 50% !important;
+  display: block !important;
+  background-color: black !important;
+}
+/*End*/
