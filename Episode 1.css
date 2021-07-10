@@ -244,3 +244,8 @@ i:hover{
   background-color: black !important;
 }
 /*End*/
+
+.center-hrz{
+   display: flex;
+  justify-content: center
+}
