@@ -220,3 +220,14 @@ i:hover{
   background-color: black !important;
 }
 /*End*/
+
+@media screen and (max-width: 500px){
+	.container{
+		width: 80%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	img{
+		width: 80%;
+	}
+}
