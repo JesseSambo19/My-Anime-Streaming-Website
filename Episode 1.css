@@ -136,6 +136,17 @@ footer{
 	margin-right: auto;
 	margin-left: auto;
 }
+@media screen and (max-width: 500px){
+	.description{
+		margin-right: 100px;
+		margin-left: 100px;
+	}
+	.container{
+		margin-right: 100px;
+		margin-left: 100px;
+	}
+
+}
 p{
 	padding: 20px;
 }
