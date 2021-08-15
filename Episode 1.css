@@ -271,3 +271,13 @@ i:hover{
 	padding: auto;
 }
 
+.iframe-size{
+	width:90vw;
+	height:50vh;
+}
+@media screen and (min-width: 800px) {
+	.iframe-size{
+		width:90vw;
+		height:90vh;
+	}
+}
