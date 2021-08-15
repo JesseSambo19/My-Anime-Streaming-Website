@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Bleach Episode 2</title>
+   <link rel="stylesheet" type="text/css" href="Episode 1.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style>
+            /*Scrollbar customization*/
+              /* width */
+              ::-webkit-scrollbar {
+                width: 10px;
+              }
+
+              /* Track */
+              ::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 5px grey; 
+                background-color: #000;
+              }
+               
+              /* Handle */
+              ::-webkit-scrollbar-thumb {
+                background: red; 
+                height: 200px;
+              }
+
+              /* Handle on hover */
+              ::-webkit-scrollbar-thumb:hover {
+                background: #b30000; 
+              }
+          </style>
+</head>
+<body>
+   <header>World Of Anime</header>
+   <div>
+      <nav>
+        <input type="text" placeholder="Search">
+        <button class="search-button">Search</button>
+        <span>
+        <i id="nav_bars" class="fa fa-bars" aria-hidden="true"></i>
+        </span>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Most Popular</a></li>
+          <li><a href="#">Dubbed</a></li>
+          <li><a href="#">Subbed</a></li>
+          <li><a href="#">Categories</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div style="display: none;"id="box">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Most Popular</a></li>
+          <li><a href="#">Dubbed</a></li>
+          <li><a href="#">Subbed</a></li>
+          <li><a href="#">Categories</a></li>
+        </ul>
+    </div>
+    <script>
+      const box = document.getElementById("box");
+
+      const openNav = ()=>{
+      if(box.classList.contains("box_open")){
+        box.classList.remove("box_open");
+      }else{
+        box.classList.add("box_open"); 
+      }
+}
+      const navBars = document.getElementById("nav_bars");
+      
+      navBars.addEventListener("click",openNav);
+    </script>
+   <h1>Bleach(Dubbed)</h1>
+   <br>
+   <button id="button1"><a style="padding-right: 10px" href="Episode 1.html">Previous</a><label>|2|</label><a style="padding-left: 10px" href="Episode 3.html">Next</a></button>
+   <div class="iframe-container center-hrz">
+      <iframe src="https://player.vimeo.com/video/573230899?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="width:70vw;height:90vh;" title="Bleach 02">
+      </iframe>
+   </div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
+   <div class="description">
+      <h3>Episode Description</h3>
+      <hr>
+      <p>
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+   </div>
+   
+   <footer>Copyright &copy; <em>Jesse Ambrosio Sambo</em> 2021. All rights reserved. | Contact | Privacy Policy (Surfing the web)</footer>
+</html>

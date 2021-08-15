@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>World Of Anime</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="Main page.css">
+	<!--responsive Nav bar-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<style>
+            /*Scrollbar customization*/
+              /* width */
+              ::-webkit-scrollbar {
+                width: 10px;
+              }
+
+              /* Track */
+              ::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 5px grey; 
+                background-color: #000;
+              }
+               
+              /* Handle */
+              ::-webkit-scrollbar-thumb {
+                background: red; 
+                height: 200px;
+              }
+
+              /* Handle on hover */
+              ::-webkit-scrollbar-thumb:hover {
+                background: #b30000; 
+              }
+          </style>
+</head>
+<body>
+	<header>World Of Anime</header>
+	<div>
+      <nav>
+        <input type="text" placeholder="Search">
+        <button class="search-button">Search</button>
+        <span>
+        <i id="nav_bars" class="fa fa-bars" aria-hidden="true"></i>
+        </span>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Most Popular</a></li>
+          <li><a href="#">Dubbed</a></li>
+          <li><a href="#">Subbed</a></li>
+          <li><a href="#">Categories</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div style="display: none;"id="box">
+      <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Most Popular</a></li>
+          <li><a href="#">Dubbed</a></li>
+          <li><a href="#">Subbed</a></li>
+          <li><a href="#">Categories</a></li>
+        </ul>
+    </div>
+    <script>
+      const box = document.getElementById("box");
+
+      const openNav = ()=>{
+      if(box.classList.contains("box_open")){
+        box.classList.remove("box_open");
+      }else{
+        box.classList.add("box_open"); 
+      }
+}
+      const navBars = document.getElementById("nav_bars");
+      
+      navBars.addEventListener("click",openNav);
+    </script>
+		<div class="row">
+			<div class="col-lg-9">
+				<div class="container1">
+					<center>
+					<a href="#"><button type="button" class="toggle-btn1" style="float: left;">Series</button></a>
+					<a href="Main page1.html"><button type="button" class="toggle-btn2" style="float: right;border-bottom-left-radius: 0%;border-bottom-right-radius: 0%;">Movies</button></a>
+			
+					<!--<h1 id="first">Series</h1><h1 id="second">Movies</h1>-->
+					</center>
+					<center>
+					<a href="streaming.html"><img src="Bleach.jpg"></a>
+					<a href="streaming1.html"><img src="04.jpg"></a>
+					<a href="#"><img src="Naruto.jpg"></a>
+					<a href="#"><img src="My Hero Academia.jpg"></a>
+					<a href="#"><img src="Saiki K.jpg"></a>
+					<a href="#"><img src="Demon Slayer.jpg"></a>
+					<a href="#"><img src="Dragon Ball.jpg"></a>
+					<a href="#"><img src="Dragon ball Z.jpeg"></a>
+					<a href="#"><img src="Dragon Ball Super.jpg"></a>
+					<a href="#"><button type="button" class="next">Next Page ></button></a>
+					</center>
+					
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="ongoingContainer1">
+					<h3>Ongoing anime</h3>
+					<center>
+					<a class="ongoing">3x3 Eyes Dubbed</a>
+					<hr>
+					<a class="ongoing">3x3 Eyes: Seima Densetsu Dubbed</a>
+					<hr>
+					<a class="ongoing">3x3 Eyes: Seima Densetsu</a>
+					<hr>
+					<a class="ongoing">S-toubun no Hanayome 2 Dubbed</a>
+					<hr>
+					<a class="ongoing">B6</a>
+					<hr>
+					<a class="ongoing">Aa! Megami-samal: Chichaitte Koto wa Benri da ne</a>
+					<hr>
+					<a class="ongoing">Aa! Megami-samal: Chichaitte Koto wa Benri da ne Dubbed</a>
+					<hr>
+					<a class="ongoing">Azumanga Daioh: Gelcijou Tanpen</a>
+					<hr>
+					<a class="ongoing">Back Arrow</a>
+					<hr>
+					<a class="ongoing">Back Arrow Dubbed</a>
+					<hr>
+					<a class="ongoing">Bakuten!!</a>
+					<hr>
+					<a class="ongoing">Barom One</a>
+					<hr>
+					<a class="ongoing">Battle Athletess Daiundoukai ReSTART!</a>
+					<hr>
+					<a class="ongoing">Beyblade Burst Dynamic Battle</a>
+					<hr>
+					<a class="ongoing">Bishojo Senshi Sailor Moon Eternal Movie 1</a>
+					</center>
+				</div>
+			</div>
+		</div>
+
+	</div>
+		
+		
+	
+	<div style="margin-top: 200px"></div>
+	<footer>Copyright &copy; <em>Jesse Ambrosio Sambo</em> 2021. All rights reserved. | Contact | Privacy Policy (Surfing the web)</footer>
+
+</body>
+</html>

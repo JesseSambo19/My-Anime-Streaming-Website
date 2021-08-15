@@ -1,0 +1,273 @@
+*{
+	margin: 0;
+	/*overflow: hidden;*/
+	font-family: Helvetica, Ariel, sans-serif;
+}
+body{
+	background-color: #333/*#696969*/;
+}
+header{
+	background-color: red;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+/*#nav_id{
+	background-color: black;
+	padding: 20px;
+}*/
+#nav_id ul{
+	list-style: none;
+	padding: 0;
+	background-color: black;
+	padding: 20px;
+	/*width: 100%;*/
+}
+#nav_id li{
+	display: inline-block;
+	padding-left: 30px;
+}
+#nav_id a{
+	text-decoration: none;
+	color: #fff;
+}
+
+h1{
+	margin-top: 20px;
+	color: #fff;
+	text-align: center;
+}
+/*start*/
+img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+    width: 300px;
+    height: 300px;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: #000;
+}
+
+.container{
+	border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: #000;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+h3{
+	text-align: center;
+	color: #fff;
+	padding: 10px;
+}
+hr{
+	height: 2px;
+	background-color: #000;
+	border: none;
+}
+p{
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: : 0px;
+	color: #fff;
+}
+
+.list{
+	list-style: none;
+	padding: 0;
+	padding: 10px;
+	display: inline-block;
+	margin-top: 20px;
+}
+.list a{
+	text-decoration: none;
+	color: white;
+	border-style: solid;
+	border-radius: 2px;
+	border-color: black;
+	padding: 10px;
+}
+.list a:hover{
+	color: red;
+}
+
+/*End*/
+video{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+}
+@media screen and (max-width: 500px){
+	video{
+		width: 90%;
+	}
+}
+#button1{
+	margin-bottom: 20px;
+	background-color: red;
+	border-style: none;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	font-size: 100%;
+}
+#button1 a{
+	text-decoration: none;
+	color: #fff;
+}
+
+footer{
+	margin-top: 20px;
+	background-color: rgb(0,0,0);
+	padding: 20px;
+	color: #fff;
+	text-align: center;
+}
+.description{
+	border: 2px black solid;
+	border-radius: 5px;
+	width: 70%;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-left: auto;
+}
+@media screen and (max-width: 500px){
+	.description{
+		/*margin-right: 100px;*/
+		/*margin-left: 100px;*/
+	}
+	.container{
+		margin-right: 100px;
+		margin-left: 100px;
+	}
+}
+
+p{
+	padding: 20px;
+}
+div h3{
+	background-color: #000;
+}
+/*responsive navigation bar*/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+  background-color: #000;
+  text-align: right;
+  height: 50px;
+  
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  color: red;
+}
+li{
+  display: inline-block;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+input{
+  float: left;
+  margin-left: 20px;
+  padding: 7px;
+  margin-top: 7px;
+  margin-bottom: 5px;
+  outline: none;
+  width: 30%;
+}
+@media screen and (max-width: 800px){
+  li{
+    display: none;
+}
+  input{
+    width: 50%;
+  }
+  /*nav{
+  	position: absolute;
+  	width: 100%;/*I added this because of absolute position of nav_bars
+  }*/
+  .container1{
+  	margin-top: 70px;
+  }
+}
+.search-button{
+  float: left;
+  width: 57px;
+  height: 35px;
+  display: flex;
+  padding: 8px;
+  margin-top: 7px;
+  cursor: pointer;
+  background-color: red;
+  border: none;
+  color: white;
+}
+.search-button:hover{
+  background-color: darkred;
+}
+i{
+  color: white; 
+  margin: 10px;
+  padding-right: 15px;
+}
+i:hover{
+  color: red;
+  cursor: pointer;
+}
+@media screen and (max-width:800px){
+  #nav_bars{
+  display: block !important;
+    position: absolute;
+    right: 0;
+}
+  #box{
+    background-color: black;
+    height: 0;
+    display: none;
+    /*margin-top: 50px;I added this because of absolute position of nav_bars*/
+  }
+  #box li{
+    text-align: center;
+    display: block;
+    color: white;
+  }
+}
+#nav_bars{
+  display: none;
+  margin-top: 20px;
+}
+.box_open{
+  height: 50% !important;
+  display: block !important;
+  background-color: black !important;
+}
+/*End*/
+.center-hrz{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iframe-container{
+	position: relative;
+	padding: auto;
+}
+
