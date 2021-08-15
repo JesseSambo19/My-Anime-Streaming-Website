@@ -4,6 +4,7 @@
 	font-family: Helvetica, Ariel, sans-serif;
 	line-height: 1.6em;
 	box-sizing: border-box;
+	overflow-x: none;
 }
 body{
 	background-color: #333/*#696969*/;
