@@ -215,19 +215,37 @@ hr{
 
 .next{
 	display: block;
-	width: 90%;
+	/*width: 90%;*/
 	/*width: 150px;*/
 	height: 50px;
 	color: #fff;
 	background-color: red;
 	border: 0;
 	border-radius: 4px;
-	margin-top: 10px;
+	margin-top: 15px;
 	margin-left: auto;
 	margin-right: auto;
 	cursor: pointer;
 	outline: none;
 	transition: all .5s;
+}
+
+@media screen and (min-width: 907px){
+	.next{
+		width: 811px;
+	}
+}
+
+@media screen and (max-width: 906px){
+	.next{
+		width: 607px;
+	}
+}
+
+@media screen and (max-width: 679px){
+	.next{
+		width: 401px;
+	}
 }
 
 .next:hover{
