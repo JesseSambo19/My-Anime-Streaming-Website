@@ -14,6 +14,10 @@ header{
 	text-align: center;
 	font-weight: bold;
 	font-size: 120%;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+	top: 0px;
 }
 
 /*#nav_id{
@@ -61,7 +65,7 @@ img{
     border-color: #000;
 }
 
-.container{
+.container1{
 	border-style: solid;
     border-radius: 5px;
     border-width: 2px;
@@ -116,14 +120,19 @@ footer{
 	color: #fff;
 	text-align: center;
 }
-.container{
-	margin-top: 20px;
+.container1{
+	margin-top: 5px;
 	border: 2px black solid;
 	border-radius: 8px;
-	width: 70%;
+	width: 90%;
 	margin-right: auto;
 	margin-left: auto;
 }
+
+.margin-top{
+	margin-top: 150px;
+}
+
 
 a:link{
 	text-decoration: none;
@@ -150,7 +159,7 @@ a:hover{
 	border-bottom: 2px solid black;
 }
 .toggle-btn2{
-	padding:5px 0 30px;
+	/*padding:5px 0 30px;*/
 	cursor: pointer;
 	border: 0;
 	border-bottom: 2px solid black;
@@ -192,11 +201,13 @@ li{
 input{
   float: left;
   margin-left: 20px;
-  padding: 5px;
+  padding: 3px;
   margin-top: 7px;
   margin-bottom: 5px;
   outline: none;
   width: 30%;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
 }
 @media screen and (max-width: 800px){
   li{
@@ -209,9 +220,6 @@ input{
   	position: absolute;
   	width: 100%;/*I added this because of absolute position of nav_bars
   }*/
-  .container1{
-  	margin-top: 70px;
-  }
 }
 .search-button{
   float: left;
@@ -260,8 +268,96 @@ i:hover{
   margin-top: 15px;
 }
 .box_open{
-  height: 50% !important;
+	padding-top: 10px;
+	position: fixed;
+	top: 120px;
+	width: 100%;
+  height: 250px !important;
   display: block !important;
   background-color: black !important;
+  z-index: 100 !important;
 }
 /*End*/
+
+.position{
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+	/*margin-top: 70px;*/
+	top: 70px;
+}
+
+.next{
+	display: block;
+	/*width: 90%;*/
+	/*width: 150px;*/
+	height: 50px;
+	color: #fff;
+	background-color: red;
+	border: 0;
+	border-radius: 4px;
+	margin-top: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	cursor: pointer;
+	outline: none;
+	/*transition: all .5s;*/
+}
+
+@media screen and (max-width: 1440px){
+	.next{
+		width: 811px;
+	}
+}
+
+@media screen and (max-width: 1212px){
+	.next{
+		width: 607px;
+	}
+}
+
+@media screen and (max-width: 991px){
+	.next{
+		width: 811px;
+	}
+}
+
+@media screen and (max-width: 906px){
+	.next{
+		width: 607px;
+	}
+}
+
+@media screen and (max-width: 679px){
+	.next{
+		width: 401px;
+	}
+}
+
+@media screen and (max-width: 453px){
+	.next{
+		width: 201px;
+	}
+}
+
+.next:hover{
+	background-color: #b30000;
+}
+
+.next:hover{
+	background-color: #b30000;
+}
+
+.ongoingContainer1{
+	margin-top: 5px;
+	border: 2px black solid;
+	border-radius: 8px;
+	width: 80%;
+	padding-bottom: 10px;
+}
+
+@media  screen and (max-width: 992px) {
+	.ongoingContainer1{
+		display: none;
+	}	
+}

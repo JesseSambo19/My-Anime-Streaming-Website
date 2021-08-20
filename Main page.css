@@ -171,7 +171,7 @@ a:hover{
 	border-top-right-radius: 0%;
 }
 .toggle-btn2{
-	padding:5px 0 30px;
+	/*padding:5px 0 30px;*/
 	background: transparent;
 	cursor: pointer;
 	border: 0;
@@ -350,7 +350,7 @@ i:hover{
 }
 @media screen and (max-width:800px){
   #nav_bars{
-  display: block !important;
+    display: block !important;
     position: absolute;
     right: 0;
 }
