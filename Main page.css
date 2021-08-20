@@ -351,6 +351,8 @@ input{
 		justify-content: center;
 	}
 }
+
+
 .search-button{
   float: left;
   width: 60px;
@@ -397,6 +399,7 @@ i:hover{
   display: none;
   margin-top: 15px;
 }
+
 .box_open{
 	padding-top: 10px;
 	position: fixed;

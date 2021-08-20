@@ -34,18 +34,19 @@
 <body>
 	<header>World Of Anime</header>
 	<div>
-      <nav>
+      <nav class="position">
         <input type="text" placeholder="Search">
         <button class="search-button">Search</button>
         <span>
         <i id="nav_bars" class="fa fa-bars" aria-hidden="true"></i>
         </span>
-        <ul>
+        <ul id="list">
           <li><a href="index.html">Home</a></li>
           <li><a href="#">Most Popular</a></li>
           <li><a href="#">Dubbed</a></li>
           <li><a href="#">Subbed</a></li>
           <li><a href="#">Categories</a></li>
+					<li><a href="#"><button class="login-button">Log in</button></a></li>
         </ul>
       </nav>
     </div>
@@ -56,6 +57,7 @@
           <li><a href="#">Dubbed</a></li>
           <li><a href="#">Subbed</a></li>
           <li><a href="#">Categories</a></li>
+					<li><span class="center-hrz"><a href="#"><button class="login-button">Log in</button></a></span></li>
         </ul>
     </div>
     <script>
@@ -72,6 +74,7 @@
       
       navBars.addEventListener("click",openNav);
     </script>
+		<div class="margin-top"></div>
 	<h1>Bleach(Dubbed)</h1>
 	<br>
 	<img src="Bleach.jpg">
